@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/ntu" />
+
+    <TextView
+        android:text="Điểm Giữa kỳ (50%)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtGk"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Hint điểm số"
+            android:inputType="numberPassword"/>
+
+        <Button
+            android:id="@+id/btnToggleGk"
+            android:text="👁"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="Điểm Thi cuối kỳ (50%)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtCk"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Hint điểm số"
+            android:inputType="numberPassword"/>
+
+        <Button
+            android:id="@+id/btnToggleCk"
+            android:text="👁"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTinh"
+        android:text="Tính điểm TB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvKetQua"
+        android:text="Hiện kết quả ở đây"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#EEE"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:onClick="vemanhinhchinh"
+        android:text="Về màn hình chính" />
+
+</LinearLayout>
