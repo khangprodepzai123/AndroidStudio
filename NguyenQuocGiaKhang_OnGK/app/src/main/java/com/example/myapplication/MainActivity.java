@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, MainActivity2.class);
         startActivity(intent);
     }
+
+    public void manhinh3(View v) {
+        Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+        startActivity(intent);
+    }
 }

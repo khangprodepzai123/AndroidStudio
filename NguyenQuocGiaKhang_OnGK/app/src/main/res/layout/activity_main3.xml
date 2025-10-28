@@ -1,10 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EEF9EE"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/ntu" />
+
+    <TextView
+        android:text="Quiz"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Mốc thời gian Chiến dịch HỒ CHÍ MINH - Toàn thắng"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtMonth"
+        android:hint="Tháng"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtYear"
+        android:hint="Năm"
+        android:inputType="number"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Kiểm tra Đúng/Sai"
+        android:onClick="kiemTra"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:text="Hiện kết quả ở đây"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Về màn hình chính" />
+</LinearLayout>
