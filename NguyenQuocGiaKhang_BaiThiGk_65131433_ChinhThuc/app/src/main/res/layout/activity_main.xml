@@ -27,8 +27,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
-        android:onClick="manhinh3"
-        android:text="Chức năng 3"
+        android:onClick="food"
+        android:text="Món ăn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/button" />

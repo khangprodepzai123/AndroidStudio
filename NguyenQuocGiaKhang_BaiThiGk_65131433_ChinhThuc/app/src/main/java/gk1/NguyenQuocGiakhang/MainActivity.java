@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, BMIActivity.class);
         startActivity(intent);
     }
+    public void food(View v) {
+        Intent intent = new Intent(MainActivity.this, FoodActivity.class);
+        startActivity(intent);
+    }
 
 
 }
