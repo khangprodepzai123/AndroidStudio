@@ -6,10 +6,22 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bs" />
+
     <TextView
-        android:text="Điểm Giữa kỳ (50%)"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Tính chỉ số BMI" />
+
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Chiều cao(cm)" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -17,12 +29,12 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/edtGk"
+            android:id="@+id/height"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:hint="Hint điểm số"
-            android:inputType="numberPassword"/>
+            android:layout_weight="1"
+            android:hint="Nhập chiều cao"
+            android:inputType="numberPassword" />
 
         <Button
             android:id="@+id/btnToggleGk"
@@ -32,10 +44,10 @@
     </LinearLayout>
 
     <TextView
-        android:text="Điểm Thi cuối kỳ (50%)"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="12dp"
+        android:text="Cân nặng(kg)" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -43,12 +55,12 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/edtCk"
+            android:id="@+id/weight"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:hint="Hint điểm số"
-            android:inputType="numberPassword"/>
+            android:layout_weight="1"
+            android:hint="Nhập cân nặng"
+            android:inputType="numberPassword" />
 
         <Button
             android:id="@+id/btnToggleCk"
@@ -59,10 +71,10 @@
 
     <Button
         android:id="@+id/btnTinh"
-        android:text="Tính điểm TB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:text="Tính BMI" />
 
     <TextView
         android:id="@+id/tvKetQua"
