@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package gk1.NguyenQuocGiakhang;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    // Hàm này sẽ được gọi khi bấm nút trong XML
     public void bmi(View v) {
         Intent intent = new Intent(MainActivity.this, BMIActivity.class);
         startActivity(intent);

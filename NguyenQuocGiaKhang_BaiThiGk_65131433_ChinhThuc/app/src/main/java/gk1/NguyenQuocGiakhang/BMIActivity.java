@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package gk1.NguyenQuocGiakhang;
 
 import androidx.appcompat.app.AppCompatActivity;
 
