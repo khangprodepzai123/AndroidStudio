@@ -34,4 +34,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void quiz(View v) {
+        Intent intent = new Intent(MainActivity.this, MedicalQuizActivity.class);
+        startActivity(intent);
+    }
+
+
 }
