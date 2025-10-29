@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ThuocItem"
+            android:exported="false" />
+        <activity
+            android:name=".ThuocAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ItemThuocActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThuocActivity"
+            android:exported="false" />
+        <activity
             android:name=".ItemFoodActivity"
             android:exported="false" />
         <activity

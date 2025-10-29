@@ -22,5 +22,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void thuoc(View v) {
+        Intent intent = new Intent(MainActivity.this, ThuocActivity.class);
+        startActivity(intent);
+    }
+
 
 }
